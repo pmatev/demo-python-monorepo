@@ -6,6 +6,7 @@
 
 python_library(
   name='bar_pkg',
+  compatibility=['CPython>=3.4'],
   dependencies=[
     # 'bar/tests:main',
 
@@ -18,6 +19,7 @@ python_library(
     url='https://github.com/deliveroo/python-packages',
     zip_safe=True
   ),
+  # add any modules & nested modules here to expose them in the dist package
   sources=[
     'bar_pkg/*.py',
     'bar_pkg/config/*.py',
