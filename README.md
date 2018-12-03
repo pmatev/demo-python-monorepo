@@ -8,11 +8,10 @@ The build system will intelligently cache unchanged dependencies and tests to sp
 
 #### To add a new library
 
-(TODO)
 ```
-./dev new-library <library-name>
+./dev new <library-name>
 ```
-creates a new folder with a template structure ready to go.
+Enter your details, use default if unsure and follow the instructions :)
 
 
 #### To contribute to an existing package
