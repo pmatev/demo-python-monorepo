@@ -1,21 +1,21 @@
 python_library(
-  name='bar_pkg',
+  name='example',
   compatibility=['CPython>=3.4'],
   dependencies=[
-    # 'bar/tests:main',
+    # 'example/tests:main',
 
-    'bar_pkg/3rdparty/python:ansicolors',
-    'bar_pkg/3rdparty/python:beautifulsoup4',
+    'example/3rdparty/python:configparser',
   ],
   provides=setup_py(
-    name='bar_pkg.deliveroo',
+    name='example.deliveroo',
     version='0.0.1',
     url='https://github.com/deliveroo/python-packages',
     zip_safe=True
   ),
   # add any modules & nested modules here to expose them in the dist package
   sources=[
-    'bar_pkg/*.py',
-    'bar_pkg/config/*.py',
+    'example/*.py',
+    'example/config/*.py',
+    # add more path globs here
   ]
 )

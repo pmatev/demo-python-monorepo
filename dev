@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ "$1" == "new" ]]; then
+  echo "creating new library... $2";
+  pipenv run cookiecutter .cookiecutters/library project_name=$2
+  echo "Done. Your new package is now in $2/"
+else
+  echo "not found"
+fi
