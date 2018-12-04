@@ -7,7 +7,7 @@ if [[ "$1" == "new" ]]; then
 
 elif [[ "$1" == "bump" ]]; then
   if [[ -z "$2" || -z "$3" ]]; then echo "usage: ./dev bump <package> <major|minor|patch>"; exit 1; fi;
-  cd $2 && pipenv run bumpversion $3 && cd ..
+  cd $2 && pipenv run bumpversion ${@:3:99} && cd ..
 else
   echo "Command not found"
 fi

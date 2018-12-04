@@ -8,7 +8,7 @@ python_library(
   ],
   provides=setup_py(
     name='example.deliveroo',
-    version=0.1.0,
+    version='0.1.0',
     url='https://github.com/deliveroo/python-packages',
     zip_safe=True
   ),
