@@ -18,7 +18,8 @@ Enter your details, use default if unsure and follow the instructions :)
 
 (TODO)
 1. Make your changes on a branch
-2. Bump the version number using `./dev bump <library> <major|minor|patch>` e.g. `./dev bar_pkg minor`
+2. With a clean git repo, bump the version number using `./dev bump <library> <major|minor|patch>` e.g. `./dev bar_pkg minor`
+3. Update the <library>/CHANGELOG.md
 3. Open a PR on github
 4. Make the PR checks go green (unit tests, linting rules etc.)
 5. Get a peer review
@@ -40,3 +41,6 @@ outputs a final built pip-compatible distribution `./dist/bar_pkg.deliveroo-0.0.
 ./pants test            # test all packages
 ./pants test bar_pkg/   # test single package
 ```
+
+(TODO)
+Example how to link locally
