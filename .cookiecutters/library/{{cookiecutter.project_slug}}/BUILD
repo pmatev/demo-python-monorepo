@@ -8,7 +8,7 @@ python_library(
   ],
   provides=setup_py(
     name='{{cookiecutter.project_slug}}.deliveroo',
-    version='0.0.1',
+    version='{{cookiecutter.version}}',
     url='https://github.com/deliveroo/python-packages',
     zip_safe=True
   ),
