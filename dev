@@ -4,6 +4,10 @@ if [[ "$1" == "new" ]]; then
   echo "creating new library... $2";
   pipenv run cookiecutter .cookiecutters/library project_name=$2
   echo "Done. Your new package is now in $2/"
+
+elif [[ "$1" == "bump" ]]; then
+  if [[ -z "$2" || -z "$3" ]]; then echo "usage: ./dev bump <package> <major|minor|patch>"; exit 1; fi;
+  cd $2 && pipenv run bumpversion $3 && cd ..
 else
-  echo "not found"
+  echo "Command not found"
 fi
