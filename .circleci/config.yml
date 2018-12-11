@@ -1,0 +1,15 @@
+version: 2
+
+jobs:
+  pants_test:
+   steps:
+     - checkout
+     - run:
+         name: 'Pants tests'
+         command: ./.circleci/pull_request_run.sh
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - pants_test
