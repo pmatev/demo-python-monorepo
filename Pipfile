@@ -10,6 +10,7 @@ verify_ssl = true
 [packages]
 cookiecutter = "*"
 bumpversion = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"

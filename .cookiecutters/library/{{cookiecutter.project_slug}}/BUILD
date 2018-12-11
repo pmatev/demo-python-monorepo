@@ -19,3 +19,10 @@ python_library(
     # add more path globs here
   ]
 )
+
+python_tests(
+  name='{{cookiecutter.project_slug}}_tests',
+  dependencies=[':{{cookiecutter.project_slug}}'],
+  sources=['tests']
+)
+

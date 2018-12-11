@@ -19,3 +19,10 @@ python_library(
     # add more path globs here
   ]
 )
+
+python_tests(
+  name='example_tests',
+  dependencies=[':example'],
+  sources=['tests']
+)
+
